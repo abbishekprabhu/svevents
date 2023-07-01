@@ -25,6 +25,7 @@ html, body
     --rectangle-baox-shadow: #ffffff39;
     --shadow-layout: #00000050;
     --submit-shadow: #dec3b9;
+    --ham-burger-color: #008fff;
 }
 body
 {
@@ -759,6 +760,16 @@ textarea
       transform: translateY(-90%);
   }
 }
+.banner-video
+{
+  left: -750px;
+}
+.footer-social a {
+  margin: 0px 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
 .creators-brag 
 {
   padding-left: 11px;
@@ -812,7 +823,7 @@ textarea
 }
 
 .ham-menu .dashes {
-    background-color: var(--primary-color);
+    background-color: var(--ham-burger-color);
     border-radius: 1em;
     width: 2rem;
     height: 0.22rem;

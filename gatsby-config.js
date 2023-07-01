@@ -11,8 +11,30 @@ module.exports = {
   siteMetadata: {
     title: `SV Events`,
     description: `Your One Stop Solution for all your events!`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: `Parvathesh`,
+    siteUrl: `https://svevents.in/`,
+    og: {
+      url: 'https://svevents.in/',
+      type: 'website',
+      site_name: 'SV Events',
+      title: 'SV Events',
+      description: 'Your One Stop Solution for all your events!',
+      image: 'https://svevents.in/og-image.jpg',
+      locale: 'en_us',
+      fb_app_id: 'Your FB_APP_ID',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      domain: 'https://svevents.in/',
+      url: 'https://svevents.in/',
+      title: 'SV Events',
+      description: 'Your One Stop Solution for all your events!',
+      image: 'https://svevents.in/og-image.jpg',
+      label1: 'Design your day and treasure it :)',
+      data1: 'Decorations | Catering | Purohith services | Photography | Gifts | DJ/Band | Tents | Services for all occasions :)',
+      label2: 'Book Your Event Now!',
+      data2: 'https://svevents.in/'
+    }
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -32,11 +54,9 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/sv.png`,
       },
     },
   ],

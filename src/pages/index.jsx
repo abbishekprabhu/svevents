@@ -170,7 +170,7 @@ export default function IndexPage() {
         <div className="service-div">
           <div className="meant-div">
             <Img fluid={decoration} alt="dummyimage" className="meant-image" />
-            <p className="event-names">Decoration</p>
+            <p className="event-names">Decorations</p>
           </div>
           <div className="meant-div">
             <Img fluid={catering} alt="dummyimage" className="meant-image" />
