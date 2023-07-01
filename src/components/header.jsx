@@ -31,8 +31,8 @@ export default function Header() {
           <div className="nav-links">
             <Link to="/" aria-label="Home">Home</Link>
             <Link to="/about-us" aria-label="About">About Us</Link>
-            <Link to="/works" aria-label="Works">Our Works</Link>
-            <Link to="/services" aria-label="Services">Services</Link>
+            <Link to="#our-works" aria-label="Works">Our Works</Link>
+            <Link to="#services" aria-label="Services">Services</Link>
             <Link to="#contact" aria-label="Contact">Contact</Link>
           </div>
         </nav>
