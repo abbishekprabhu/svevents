@@ -83,7 +83,12 @@ body
 header a
 {
     z-index: 3;
-    width: 135px;
+    width: 100px;
+}
+.logo-image
+{
+  width: 70px;
+  margin-left: 25px;
 }
 header
 {
