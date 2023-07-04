@@ -878,12 +878,12 @@ textarea
   nav .nav-links a:nth-child(5)
   {
     width: fit-content;
-    margin: 18px 36px 54px 44px;
+    margin: 18px 36px 54px 19px;
   }
   nav .nav-links a
   {
     margin: 25px 0;
-    padding-left: 60px;
+    padding-left: 25px;
   }
   .or::before
   {

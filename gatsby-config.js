@@ -34,7 +34,7 @@ module.exports = {
       data1: 'Decorations | Catering | Purohith services | Photography | Gifts | DJ/Band | Tents | Services for all occasions :)',
       label2: 'Book Your Event Now!',
       data2: 'https://svevents.in/'
-    }
+    },
   },
   plugins: [
     `gatsby-plugin-image`,
