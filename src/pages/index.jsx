@@ -1,12 +1,12 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Swiping from "../components/swiping"
 import video from "../videos/clip.mp4"
 export default function IndexPage() {
-
+  
   const phone = useStaticQuery(graphql`
   query {
     phone: file(relativePath: { eq: "phone.png" }) {
@@ -163,7 +163,6 @@ export default function IndexPage() {
       <section className="second-section" id="our-works">
         <h2>Our works</h2>
         <Swiping />
-        <Link to="/works" aria-label="Works" className="view-more">View more!</Link>
       </section>
       <section className="third-section" id="services">
         <h3>Services</h3>

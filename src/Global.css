@@ -153,30 +153,6 @@ footer
     text-align: center;
     padding: 70px 0;
 }
-.view-more
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--primary-background);
-  min-width: 200px;
-  min-height: 60px;
-  width: fit-content;
-  color: var(--primary-color);
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-  margin: auto;
-  border-radius: 5px;
-  transition: linear 0.2s;
-}
-.view-more:hover
-{
-  transition: linear 0.2s;
-  color: var(--secondary-background);
-  background: var(--primary-color);
-  border-radius: 35px;
-}
 /* --------first-section------ */
 .first-section
 {
@@ -657,6 +633,7 @@ textarea
     text-align: left;
     color: var(--light-color);
     font-weight: lighter;
+    line-height: 1.7;
   }
   .welcome:first-letter
   {
@@ -689,6 +666,21 @@ textarea
     margin-top: 100px;
   }
 /* --------------- */
+/* ---social----- */
+.social-page
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+.social-page a
+{
+  margin: 0px 25px;
+}
+/* -------------- */
 .slider-images
 {
   width: 100%;
@@ -702,7 +694,7 @@ textarea
   flex-wrap: wrap;
   padding: 0px 0px 25px 0px;
 }
-.footer-social a
+.footer-social a, .social-page a
 {
   text-decoration: none;
   color: var(--primary-color);
@@ -713,14 +705,14 @@ textarea
   transition: linear 0.2s;
   text-transform: uppercase;
 }
-.footer-social a:first-child:hover {
+.footer-social a:first-child:hover, .social-page a:first-child:hover {
   background: linear-gradient( 90deg, #D300C5, #FF0069, #FF7A00 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: linear 0.2s;
   color: transparent;
 }
-.footer-social a:nth-child(2):hover {
+.footer-social a:nth-child(2):hover, .social-page a:nth-child(2):hover {
   background: linear-gradient(120deg, #3b5998, #5c84da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -728,7 +720,7 @@ textarea
   color: transparent;
   text-decoration: underline;
 }
-.footer-social a:nth-child(3):hover {
+.footer-social a:nth-child(3):hover, .social-page a:nth-child(3):hover {
   background: #0d90e0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

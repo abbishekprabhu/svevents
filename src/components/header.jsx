@@ -19,7 +19,7 @@ export default function Header() {
     <>
       <header>
         <Link to="/" aria-label="Home">
-          <Img fluid={logo.file.childImageSharp.fluid} alt="logo" className="logo-image"/>
+          <Img fluid={logo.file.childImageSharp.fluid} alt="logo" className="logo-image" />
         </Link>
         <input type="checkbox" name="" id="" className="check" />
         <div className="ham-menu">
