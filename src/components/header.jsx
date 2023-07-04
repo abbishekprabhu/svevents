@@ -30,10 +30,10 @@ export default function Header() {
         <nav>
           <div className="nav-links">
             <Link to="/" aria-label="Home">Home</Link>
-            <Link to="/about-us" aria-label="About">About Us</Link>
-            <Link to="#our-works" aria-label="Works">Our Works</Link>
-            <Link to="#services" aria-label="Services">Services</Link>
-            <Link to="#contact" aria-label="Contact">Contact</Link>
+            <Link to="https://svevents.netlify.app/about-us" aria-label="About">About Us</Link>
+            <Link to="https://svevents.netlify.app/#our-works" aria-label="Works">Our Works</Link>
+            <Link to="https://svevents.netlify.app/#services" aria-label="Services">Services</Link>
+            <Link to="https://svevents.netlify.app/#contact" aria-label="Contact">Contact</Link>
           </div>
         </nav>
       </header>

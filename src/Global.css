@@ -16,6 +16,7 @@ html, body
     --primary-color:#fff;
     --primary-color-hover:#E73895;
     --secondary-color: #757575;
+    --light-color: #a2a2a2;
     --border-color: #E73895;
     --primary-background: #04027D;
     --secondary-background:#00264F;
@@ -621,6 +622,72 @@ textarea
 {
   font-size: 45px;
 }
+.about-us-image
+{
+  width: 100%;
+  border-radius: 100px;
+  margin: 50px 0px 100px 0px;
+}
+.about-us-image::after {
+  content: "";
+  width: 2000px;
+  height: 10%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 500px;
+  background: var(--rectangle-baox-shadow);
+  opacity: 0.6;
+  animation: login-blur 2s infinite;
+  animation-delay: 0s;
+  transform-origin: top;
+}
+@keyframes login-blur {
+  from {
+    transform: translate(-1270px) rotate(120deg);
+  }
+  to {
+    transform: translateX(670px) rotate(120deg);
+  }
+  }
+  .about-paragraph
+  {
+    margin: 25px 0;
+    font-size: 23px;
+    text-align: left;
+    color: var(--light-color);
+    font-weight: lighter;
+  }
+  .welcome:first-letter
+  {
+    initial-letter: 2;
+    color: var(--primary-color-hover);
+    font-weight: bold;
+    font-family: math;
+  }
+  .contact-us
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 75px;
+    text-decoration: none ;
+    color: var(--primary-color);
+    font-size: 23px;
+    background: var(--fourth-background);
+    transition: linear 0.2s;
+    font-weight: lighter;
+  }
+  .contact-us:hover
+  {
+    border-radius: 35px;
+    transition: linear 0.2s;
+  }
+  .line
+  {
+    margin-top: 100px;
+  }
 /* --------------- */
 .slider-images
 {
