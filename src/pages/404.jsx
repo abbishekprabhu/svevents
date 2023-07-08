@@ -1,5 +1,5 @@
 import * as React from "react"
-
+import "../Global.css"
 import Seo from "../components/seo"
 import { Link } from "gatsby"
 

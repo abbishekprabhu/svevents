@@ -1,6 +1,7 @@
 import * as React from "react"
 import Seo from "../components/seo"
 import { Link } from "gatsby"
+import "../Global.css"
 
 export default function Thanks() {
    return (
