@@ -728,6 +728,38 @@ textarea
   color: transparent;
   text-decoration: underline;
 }
+.thanks
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.thanks p
+{
+  font-size: 20px;
+  text-align: center;
+}
+.thanks a
+{
+  background: var(--fourth-background);
+  color: var(--primary-color);
+  text-decoration: none;
+  min-width: 200px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: linear 0.2s;
+}
+.thanks a:hover
+{
+  border-radius: 35px;
+  transition: linear 0.2s;
+}
 /* --------------- */
 @media (max-width:1400px) {
   .or::before, .or::after

@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-export default function SecondPage() {
+export default function AboutUs() {
   const phone = useStaticQuery(graphql`
   query {
     about: file(relativePath: { eq: "about-us.jpg" }) {

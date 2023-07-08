@@ -198,25 +198,26 @@ export default function IndexPage() {
         <div className="boxed-up">
           <h4>Contact</h4>
           <p>We would love to hear from you! Unleash your dream event. Contact us for excellence.</p>
-          <form action="manipulation" method="post" className="contact-form">
-            <input type="text" placeholder="Name" name="name" id="name" className="forms-input" />
-            <input type="tel" placeholder="Mobile Number" name="MobileNumber" id="MobileNumber" className="forms-input" />
-            <input type="email" placeholder="Email" name="Email" id="Email" className="forms-input" />
-            <select name="cars" id="cars" className="forms-input select-color">
-              <option value="Select Event">How did you hear about us?</option>
-              <option className="forms-input" value="volvo">Volvo</option>
-              <option className="forms-input" value="saab">Saab</option>
-              <option className="forms-input" value="mercedes">Mercedes</option>
-              <option className="forms-input" value="audi">Audi</option>
+          <form action="https://formsubmit.co/karthikraj096@gmail.com" method="POST" className="contact-form">
+            <input type="text" placeholder="Name" name="name" id="name" required className="forms-input" />
+            <input type="tel" placeholder="Mobile Number" name="tel" id="MobileNumber" className="forms-input" required />
+            <input type="email" placeholder="Email" name="email" id="Email" className="forms-input" required />
+            <select name="How did you hear about us?" id="hear" className="forms-input select-color">
+              <option required value="Select Event">How did you hear about us?</option>
+              <option className="forms-input" value="volvo">Whatsapp</option>
+              <option className="forms-input" value="saab">Instagram</option>
+              <option className="forms-input" value="mercedes">Others</option>
             </select>
-            <select name="cars" id="cars" className="forms-input select-color">
+            <select required name="Event Required" id="event" className="forms-input select-color">
               <option value="Select Event">Select Event</option>
-              <option className="forms-input" value="volvo">Volvo</option>
-              <option className="forms-input" value="saab">Saab</option>
-              <option className="forms-input" value="mercedes">Mercedes</option>
-              <option className="forms-input" value="audi">Audi</option>
+              <option className="forms-input" value="volvo">Marriage</option>
+              <option className="forms-input" value="saab">Birthday</option>
+              <option className="forms-input" value="mercedes">Anniversary</option>
+              <option className="forms-input" value="audi">Others</option>
             </select>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Tell us about your event"></textarea>
+            <textarea required name="paragraph" id="my-text" cols="30" rows="10" placeholder="Tell us about your event"></textarea>
+            <input type="hidden" name="_next" value="https://svevents.netlify.app/thanks" />
+            <input type="hidden" name="_captcha" value="false" />
             <input type="submit" value="Submit" className="submit-button" />
           </form>
           <p className="or">or</p>
