@@ -153,9 +153,9 @@ export default function IndexPage() {
             </div>
           </div>
           <div className="social-div">
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><Img fluid={image2Fluid} className="social-media" /></a>
+            <a href="https://www.facebook.com/profile.php?id=100069938236657" target="_blank" rel="noreferrer" aria-label="Facebook"><Img fluid={image2Fluid} className="social-media" /></a>
             <a href="https://www.instagram.com/svevents_/" rel="noreferrer" target="_blank" aria-label="Instagram"><Img fluid={image3Fluid} className="social-media" /></a>
-            <a href="https://www.twitter.com" rel="noreferrer" aria-label="Twitter"><Img fluid={image4Fluid} className="social-media" /></a>
+            {/* <a href="https://www.twitter.com" rel="noreferrer" aria-label="Twitter"><Img fluid={image4Fluid} className="social-media" /></a> */}
             <a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Whatsapp"><Img fluid={image5Fluid} className="social-media" /></a>
           </div>
         </div>
