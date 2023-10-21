@@ -10,6 +10,7 @@ html, body
     padding: 0;
 		scroll-behavior: smooth;
     overflow-x: hidden;
+    cursor: none;
 }
 :root
 {
@@ -27,6 +28,7 @@ html, body
     --shadow-layout: #00000050;
     --submit-shadow: #dec3b9;
     --ham-burger-color: #008fff;
+    --nav-blur-purpose: #00264f69;
 }
 body
 {
@@ -34,6 +36,10 @@ body
     color: var(--primary-color);
     background: var(--primary-background);
     overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
 }
 .boxed-up {
     width: 100%;
@@ -116,6 +122,7 @@ nav .nav-links a
     color: var(--primary-color);
     transition: 0.2s ease-in-out;
     font-size: 15px;
+    min-width: 170px;
 }
 nav .nav-links a:hover
 {
@@ -139,8 +146,8 @@ nav .nav-links a:nth-child(5):hover
 .check 
 {
     position: absolute;
-    top: 2.5rem;
-    right: 3rem;
+    top: 2.8rem;
+    right: 1.6rem;
     height: 3rem;
     width: 3rem;
     opacity: 0;
@@ -175,7 +182,7 @@ footer
   position: relative;
   width: fit-content;
   margin: auto;
-  background: #ffffff39;
+  background: #ffffff52;
   min-width: 1111px;
   min-height: 350px;
   display: flex;
@@ -185,6 +192,8 @@ footer
   box-shadow: 0px 0px 10px 2px var(--rectangle-baox-shadow);
   border-radius: 5px;
   top: 250px;
+  backdrop-filter: blur(10px);
+  z-index: 1;
 }
 .banner-video
 {
@@ -324,7 +333,7 @@ h2, h3
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 60%;
+  width: 100%;
   margin: auto;
 }
 .meant-div
@@ -368,7 +377,7 @@ h2, h3
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
   background: var(--shadow-layout);
@@ -766,6 +775,9 @@ textarea
   {
     width: 11%;
   }
+  .second-section {
+    margin-top: 695px
+  }
 }
 @media (max-width:1200px) {
   .first-section 
@@ -907,8 +919,8 @@ textarea
     height: 3rem;
     width: 3rem;
     position: absolute;
-    top: 2.7rem;
-    right: 3.2rem;
+    top: 3rem;
+    right: 1.5rem;
     padding: 0.5rem;
     z-index: 5;
     display: flex;
@@ -958,7 +970,8 @@ textarea
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    background: var(--secondary-background);
+    background: var(--nav-blur-purpose);
+    backdrop-filter: blur(50px);
     z-index: 10;
     border-radius: 15px 0px 0px 15px
   }
@@ -974,7 +987,7 @@ textarea
   nav .nav-links a
   {
     margin: 25px 0;
-    padding-left: 25px;
+    padding-left: 50px;
   }
   .or::before
   {
@@ -1037,7 +1050,7 @@ textarea
 }
 .meant-div
 {
-  flex: 0 0 100%;
+  flex: 0 0 47%;
 }
 .or::before
   {
@@ -1056,6 +1069,16 @@ textarea
     min-width: auto;
     width: 100%;
   }
+}
+@media (max-width: 666px) {
+  .meant-div
+{
+  flex: 0 0 100%;
+}
+.service-div
+{
+  width: 80%;
+}
 }
 @media (max-width: 576px) {
   .index-h1, .what-we-do 

@@ -204,16 +204,16 @@ export default function IndexPage() {
             <input type="email" placeholder="Email" name="email" id="Email" className="forms-input" required />
             <select name="How did you hear about us?" id="hear" className="forms-input select-color">
               <option required value="Select Event">How did you hear about us?</option>
-              <option className="forms-input" value="volvo">Whatsapp</option>
-              <option className="forms-input" value="saab">Instagram</option>
-              <option className="forms-input" value="mercedes">Others</option>
+              <option className="forms-input" value="Whatsapp">Whatsapp</option>
+              <option className="forms-input" value="Instagram">Instagram</option>
+              <option className="forms-input" value="Others">Others</option>
             </select>
             <select required name="Event Required" id="event" className="forms-input select-color">
               <option value="Select Event">Select Event</option>
-              <option className="forms-input" value="volvo">Marriage</option>
-              <option className="forms-input" value="saab">Birthday</option>
-              <option className="forms-input" value="mercedes">Anniversary</option>
-              <option className="forms-input" value="audi">Others</option>
+              <option className="forms-input" value="Marriage">Marriage</option>
+              <option className="forms-input" value="Birthday">Birthday</option>
+              <option className="forms-input" value="Anniversary">Anniversary</option>
+              <option className="forms-input" value="Others">Others</option>
             </select>
             <textarea required name="paragraph" id="my-text" cols="30" rows="10" placeholder="Tell us about your event"></textarea>
             <input type="hidden" name="_next" value="https://svevents.netlify.app/thanks" />
